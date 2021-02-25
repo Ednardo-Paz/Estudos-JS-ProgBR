@@ -1,37 +1,25 @@
-// Condicionais - Switch
-var nota1 = 8.0
-var nota2 = 1.0
+//Repetição FOR E WHILE
 
-var media = (nota1 + nota2) / 2
 
-if (media >= 8) {
-    conceito = "Ótimo"
+/*var numero = 5
+for(var vez = 0; vez < numero ; vez++){
+console.log("executando o for pela " + vez + "vez")
 }
-else if (media >= 6.5) {
-    conceito = "Bom"
-} else {
-    conceito = "Regular"
+console.log("Acabou")*/
+
+/*var numero = 5
+
+while (numero < 10) {
+    console.log(`Número ${numero} 
+    numero++
 }
+console.log (`Acabou`)*/
 
-conceito = "Mais ou menos"
+var numero = Math.random() * 100
 
-console.log(media)
-console.log(conceito)
-
-switch (conceito) {
-
-
-    case "Ótimo":
-        console.log("Parabéns, vc é um ótimo aluno.")
-        break
-    case "Bom":
-        console.log("Parabéns, vc está quase perfeito.")
-        break
-    case "Regular":
-        console.log("Estude mais um pouco.")
-        break
-
-    default:
-        console.log("vERIFIQUE OS DADOS.")
-
+while(numero < 90){
+    console.log(numero)
+    numero = Math.randon() * 100
 }
+console.log(numero)
+console.log(`Acabou`)
