@@ -1,25 +1,33 @@
-//Repetição FOR E WHILE
+/*Função
 
+function media(n1,n2) {
+var nota1 = n1
+var nota2 = n2
+var media = (nota1 + nota2) / 2 
+console.log(media)
 
-/*var numero = 5
-for(var vez = 0; vez < numero ; vez++){
-console.log("executando o for pela " + vez + "vez")
+ return media
+
 }
-console.log("Acabou")*/
 
-/*var numero = 5
+var resultado1 = media(6,7) 
+var resultado2 = media(8,7)
 
-while (numero < 10) {
-    console.log(`Número ${numero} 
-    numero++
+console.log(`${resultado1} e ${resultado2}`)
+
+
+function saudacao() {
+    return "olá, Mundo!   "
 }
-console.log (`Acabou`)*/
 
-var numero = Math.random() * 100
+var s = saudacao()
+console.log(s)
 
-while(numero < 90){
-    console.log(numero)
-    numero = Math.randon() * 100
+*/
+
+var media = function(n1,n2) {
+    return (n1 + n2) / 2
 }
-console.log(numero)
-console.log(`Acabou`)
+var m = media(5,6)
+
+console.log(m)
