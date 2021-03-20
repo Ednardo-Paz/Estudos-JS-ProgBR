@@ -1,0 +1,4 @@
+var aluno = {nome: "João", 
+notas: [5.0,7,5]
+}
+console.log(aluno.notas[1])
