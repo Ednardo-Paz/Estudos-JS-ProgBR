@@ -32,5 +32,6 @@ function aluno(nome, n1, n2){
 }
 
 var a = new aluno("Ed", 8, 7);
-
+    
 console.log(a.media())
+console.log(a)
