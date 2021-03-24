@@ -7,24 +7,14 @@
     <title>localStorage</title>
     
     <script>
-        onload = function(){
-            let nome = localStorage.getItem("nome")
-            let h1 = document.getElementById("nome")
-            h1.innerHTML = nome;
+let pessoas = ["Ed", "Edu", "João", "Marcos", "JOsé", "Pedro"]
+
+        function sortear(){
+
+        let np = pessoas.length
+        let ns = Math.floor(Math.random() * np)
+        document.getElementById("d").innerHTML = pessoas [ns ]
         }
-  
-        function atualizar(element){
-
-            let valor = element.value
-            console.log(valor )
-             
-            let h1 = document.getElementById("nome")
-            h1.innerHTML = valor
-
-            localStorage.setItem("nome", valor)
-
-        }
-
 
         
     </script>
@@ -32,9 +22,9 @@
 
 </head>
 <body>
-<h1 id="nome"></h1>
-<input type="text" oninput="atualizar(this)">
 
+    <h1 id="d"></h1>
+    <button onclick="sortear()"> Sortear </button>
     
 </body>
 </html>
