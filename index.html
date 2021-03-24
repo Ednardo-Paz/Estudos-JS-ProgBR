@@ -4,32 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>JSON</title>
     <script>
-        function hideH1(){
-        let h1 = document.getElementsByTagName("h1")[0]
-        h1.style.display = "none"
-    }
-    </script>
-    <style>
-        div{
-            padding: 25px;
-            font-size: 2rem;
-            background-color: green;
-            color: honeydew;
-            display: inline;
+        let a = {
+            nome: "Ed",
+            nota: 9
         }
-    </style>
+
+        let b = JSON.stringify(a);
+
+      
+        console.log(a)
+        console.log(b)
+
+        
+    </script>
+
+
 </head>
-
-
 <body>
+
+
+
     
-<h1>Clique em mim</h1>
-
-<div onclick="hideH1()">CLick</div>
-
-
 </body>
 </html>
